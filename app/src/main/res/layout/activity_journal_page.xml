@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/journal_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".JournalPageActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note Title"
+            android:id="@+id/titleEditText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Record any progress or setbacks you've had today regarding your mental health and/or addictions. "
+            android:layout_marginTop="16dp"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:id="@+id/contentEditText"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/custom_button"
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Notes"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:text="Notes:"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:id="@+id/notesTextView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:id="@+id/notesScrollView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/notesContainer"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
