@@ -20,7 +20,11 @@ import android.widget.TextView;
 
 import com.example.rsahomepage.databinding.ActivityJournalPageBinding;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class JournalPageActivity extends AppCompatActivity {
@@ -51,6 +55,19 @@ public class JournalPageActivity extends AppCompatActivity {
 
         displayNotes();
         loadNotesFromPreferences();
+
+        Calendar calendar = Calendar.getInstance();
+        Date date = calendar.getTime();
+        DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.FULL);
+        String formattedDate = dateFormat.format(date);
+        DateFormat timeFormat = DateFormat.getTimeInstance(DateFormat.SHORT);
+        String formattedTime = timeFormat.format(date);
+        TextView dateTextView = findViewById(R.id.xml_text_date);
+        TextView timeTextView = findViewById(R.id.xml_text_time);
+
+        dateTextView.setText(formattedDate);
+        timeTextView.setText(formattedTime);
+
 
 
     }
@@ -93,6 +110,8 @@ public class JournalPageActivity extends AppCompatActivity {
             createNoteView(note);
             clearInputFields();
         }
+
+
     }
 
     private void clearInputFields() {
