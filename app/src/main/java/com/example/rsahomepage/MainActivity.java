@@ -20,12 +20,16 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     public CardView card1, card2, card3, card4;
+    public int done;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent zoomyZoom = new Intent(MainActivity.this,Transition.class);
+        startActivity(zoomyZoom);
+
         setContentView(R.layout.activity_main);
 
 
