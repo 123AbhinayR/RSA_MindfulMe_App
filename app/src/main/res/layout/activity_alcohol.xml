@@ -4,7 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Alcohol">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/AlcoholArt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/alcoholart1" />
+
+            <ImageView
+                android:id="@+id/AlcoholArt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/alcoholart2" />
+
+            <ImageView
+                android:id="@+id/AlcoholArt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/alcoholart3" />
+
+            <ImageView
+                android:id="@+id/AlcoholArt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="284dp"
+                app:srcCompat="@drawable/alcoholart4" />
+
+            <ImageView
+                android:id="@+id/AlcoholArt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/alcoholart5" />
+
+            <TextView
+                android:id="@+id/AlcoholText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Overcoming Alcohol Addiction" />
+
+            <TextView
+                android:id="@+id/AlcoholText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Treatment for Alcohol Problems: Finding and Getting Help" />
+
+            <TextView
+                android:id="@+id/AlcoholText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11 ways to curb your drinking" />
+
+            <TextView
+                android:id="@+id/AlcoholText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Benefits of Quitting Alcohol" />
+
+            <TextView
+                android:id="@+id/AlcoholText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7 Strategies You Can Use In Overcoming Alcoholism" />
+        </LinearLayout>
+    </ScrollView>
 
     <ImageButton
         android:id="@+id/backButton4"
@@ -17,46 +98,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
-
-    <ImageView
-        android:id="@+id/AlcoholArt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/alcoholart1" />
-
-    <ImageView
-        android:id="@+id/AlcoholArt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/alcoholart2" />
-
-    <ImageView
-        android:id="@+id/AlcoholArt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/alcoholart3" />
-
-    <ImageView
-        android:id="@+id/AlcoholArt4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="284dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/alcoholart4" />
-
-    <ImageView
-        android:id="@+id/AlcoholArt5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/alcoholart5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

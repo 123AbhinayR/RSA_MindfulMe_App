@@ -4,7 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AnxietyDepression">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/AnxArt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/anx1" />
+
+            <ImageView
+                android:id="@+id/AnxArt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/anx2" />
+
+            <ImageView
+                android:id="@+id/AnxArt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/anx3" />
+
+            <ImageView
+                android:id="@+id/AnxArt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/anx4" />
+
+            <ImageView
+                android:id="@+id/AnxArt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/anx5" />
+
+            <TextView
+                android:id="@+id/AnxText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Overcoming Anxiety - Harvard" />
+
+            <TextView
+                android:id="@+id/AnxText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Types of anxiety and ways to overcome them" />
+
+            <TextView
+                android:id="@+id/AnxText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11 tips for coping with an anxiety disorder" />
+
+            <TextView
+                android:id="@+id/AnxText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anxiety in Children and Teens: A Parent’s Guide" />
+
+            <TextView
+                android:id="@+id/AnxText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Help Someone with Anxiety" />
+        </LinearLayout>
+    </ScrollView>
 
     <ImageButton
         android:id="@+id/backButton2"
@@ -17,48 +94,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
-
-    <ImageView
-        android:id="@+id/AnxArt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/anx1" />
-
-    <ImageView
-        android:id="@+id/AnxArt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/anx2" />
-
-    <ImageView
-        android:id="@+id/AnxArt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/anx3" />
-
-    <ImageView
-        android:id="@+id/AnxArt4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/anx4" />
-
-    <ImageView
-        android:id="@+id/AnxArt5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/anx5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

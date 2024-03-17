@@ -4,80 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Drugs">
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/DrugsArt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/drugsart1" />
+
+            <ImageView
+                android:id="@+id/DrugsArt2"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/drugsart3" />
+
+            <ImageView
+                android:id="@+id/DrugsArt3"
+                android:layout_width="163dp"
+                android:layout_height="109dp"
+                app:srcCompat="@drawable/drugsart4"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/DrugsArt4"
+                android:layout_width="178dp"
+                android:layout_height="131dp"
+                app:srcCompat="@drawable/drugsart5"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/DrugsArt5"
+                android:layout_width="176dp"
+                android:layout_height="133dp"
+                app:srcCompat="@drawable/drugsart2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/DrugsText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Break an Addiction: A Guide to Overcoming Addiction"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/DrugsText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Overcoming Drug Addiction"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/DrugsText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drugs, Brains, and Behavior: The Science of Addiction"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/DrugsText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drug addiction (substance use disorder)"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/DrugsText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dealing With Addiction (For Teens) "
+                android:textAlignment="center" />
+        </LinearLayout>
+    </ScrollView>
+
     <ImageButton
-        android:id="@+id/backButton1"
-        android:layout_width="550dp"
-        android:layout_height="550dp"
-        android:layout_marginStart="-245dp"
-        android:layout_marginTop="-245dp"
-        android:scaleX="0.125"
-        android:scaleY="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_button"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/DrugsArt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:importantForAccessibility="no"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125"
-        app:srcCompat="@drawable/drugsart1" />
-
-    <ImageView
-        android:id="@+id/DrugsArt2"
-        android:layout_width="181dp"
-        android:layout_height="70dp"
-        android:importantForAccessibility="no"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349"
-        app:srcCompat="@drawable/drugsart3" />
-
-    <ImageView
-        android:id="@+id/DrugsArt3"
-        android:layout_width="163dp"
-        android:layout_height="109dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/drugsart4"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/DrugsArt4"
-        android:layout_width="178dp"
-        android:layout_height="131dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727"
-        app:srcCompat="@drawable/drugsart5"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/DrugsArt5"
-        android:layout_width="176dp"
-        android:layout_height="133dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.988"
-        app:srcCompat="@drawable/drugsart2"
-        tools:ignore="ContentDescription" />
+                android:id="@+id/backButton1"
+                android:layout_width="550dp"
+                android:layout_height="550dp"
+                android:layout_marginStart="-245dp"
+                android:layout_marginTop="-245dp"
+                android:scaleX="0.125"
+                android:scaleY="0.125"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_button"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
