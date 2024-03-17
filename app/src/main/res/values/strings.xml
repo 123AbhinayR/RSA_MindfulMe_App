@@ -14,6 +14,34 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <resources>
+
+        <string name="link1">
+        <a href="https://www.sutterhealth.org/health/mind-body/10-simple-ways-to-cope-with-stress">10 ways to cope with stress</a>
+    </string>
+
+        <string name="link2">
+        <a href="https://www.kff.org/statedata/mental-health-and-substance-use-state-fact-sheets/north-carolina/">Mental Health Prevalence</a>
+    </string>
+
+        <string name="link3">
+        <a href="https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health">Effects on Teens</a>
+    </string>
+
+        <string name="link4">
+        <a href="https://youtu.be/sidOV94enHQ?si=gHYJ0eVX-XRtMF07">Coping Strategies</a>
+    </string>
+
+        <string name="link5">
+        <a href="https://youtu.be/rkZl2gsLUp4?si=HEekJcGYPy0t1x2W">Managing Mental Health</a>
+    </string>
+
+        <string name="link6">
+        <a href="https://youtu.be/IDPDEKtd2yM?si=ohxiRUbpMq7Ze5AH">Living with Depression</a>
+    </string>
+
+    </resources>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus

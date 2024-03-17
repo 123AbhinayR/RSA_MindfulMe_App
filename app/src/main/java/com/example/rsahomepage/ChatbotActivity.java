@@ -80,6 +80,7 @@ public class ChatbotActivity extends AppCompatActivity {
             welcomeTextView.setVisibility(View.GONE);
         });
 
+
     }
 
     void addToChat(String message, String sentBy) {
