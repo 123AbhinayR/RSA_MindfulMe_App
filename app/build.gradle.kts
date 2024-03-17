@@ -42,6 +42,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    compileSdkVersion = 34
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
     }
