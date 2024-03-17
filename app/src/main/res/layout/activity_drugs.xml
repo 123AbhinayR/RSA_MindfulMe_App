@@ -28,7 +28,7 @@
 
             <ImageView
                 android:id="@+id/DrugsArt2"
-                android:layout_width="match_parent"
+                android:layout_width="156dp"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/drugsart3" />
 
@@ -87,7 +87,6 @@
                 android:layout_height="wrap_content"
                 android:text="Dealing With Addiction (For Teens) "
                 android:textAlignment="center" />
-
         </LinearLayout>
     </ScrollView>
 
