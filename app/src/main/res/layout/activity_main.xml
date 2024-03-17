@@ -7,9 +7,10 @@
     tools:context=".MainActivity">
 
     <View
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="160dp"
         android:background="@drawable/bg_view" />
+
 
     <Button
         android:id="@+id/survey_button"
@@ -17,20 +18,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="3dp"
-        android:backgroundTint="#00BCD4" />
-
-    <TextView
-        android:id="@+id/title_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="160dp"
         android:text="SURVEY"
         android:textColor="#000000"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#38B6FF" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -178,10 +171,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title_view"
+        android:layout_below="@+id/survey_button"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="-155dp"
         android:layout_marginRight="30dp"
         android:text="Disclaimer: This mental health app provides general information and support but is not a substitute for professional advice. Users should consult qualified mental health professionals for personalized guidance, and the app does not guarantee specific outcomes."
         android:textAlignment="center"
