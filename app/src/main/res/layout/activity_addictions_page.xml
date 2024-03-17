@@ -6,13 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".AddictionsPageActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Addictions Page"
+    <Button
+        android:id="@+id/DrugButton"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_blue_button"
+        android:textAllCaps="false"
+        android:text="@string/drugs"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+    <Button
+        android:id="@+id/AnxietyDepressionButton"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_blue_button"
+        android:textAllCaps="false"
+        android:text="@string/anxietydepression"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+    <Button
+        android:id="@+id/GamblingButton"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_blue_button"
+        android:textAllCaps="false"
+        android:text="@string/gambling"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+    <Button
+        android:id="@+id/AlcoholButton"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:background="@drawable/round_blue_button"
+        android:textAllCaps="false"
+        android:text="@string/alcohol"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
 </androidx.constraintlayout.widget.ConstraintLayout>
