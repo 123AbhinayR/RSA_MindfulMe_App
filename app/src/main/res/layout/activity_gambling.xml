@@ -22,79 +22,88 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/GamblingTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gambling Addiction Help"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
             <ImageView
                 android:id="@+id/GamblingArt1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="152dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
                 app:srcCompat="@drawable/gamblingart1" />
-
-            <ImageView
-                android:id="@+id/GamblingArt2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/gamblingart2" />
-
-            <ImageView
-                android:id="@+id/GamblingArt3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/gamblingart3" />
-
-            <ImageView
-                android:id="@+id/GamblingArt4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/gamblingart4" />
-
-            <ImageView
-                android:id="@+id/GamblingArt5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="56dp"
-                android:layout_marginBottom="284dp"
-                app:srcCompat="@drawable/gamblingart5" />
 
             <TextView
                 android:id="@+id/GamblingText1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:text="How To Stop Gambling: 6 Helpful Tips From Experts" />
+
+            <ImageView
+                android:id="@+id/GamblingArt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/gamblingart2" />
 
             <TextView
                 android:id="@+id/GamblingText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:text="You Can Overcome Gambling Addiction" />
+
+            <ImageView
+                android:id="@+id/GamblingArt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/gamblingart3" />
 
             <TextView
                 android:id="@+id/GamblingText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:text="Gambling Addiction and Problem Gambling" />
+
+            <ImageView
+                android:id="@+id/GamblingArt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/gamblingart4" />
 
             <TextView
                 android:id="@+id/GamblingText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:text="Gambling risks are rising for young people. How to lower the stakes" />
+
+            <ImageView
+                android:id="@+id/GamblingArt5"
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/gamblingart5" />
 
             <TextView
                 android:id="@+id/GamblingText5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
                 android:text="How to Stop Betting on Sports" />
         </LinearLayout>
     </ScrollView>
-    <ImageButton
-        android:id="@+id/backButton3"
-        android:layout_width="550dp"
-        android:layout_height="550dp"
-        android:layout_marginStart="-245dp"
-        android:layout_marginTop="-245dp"
-        android:scaleX="0.125"
-        android:scaleY="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_button" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

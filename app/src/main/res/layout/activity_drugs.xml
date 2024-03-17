@@ -20,38 +20,22 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <TextView
+                android:id="@+id/DrugsTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drug Addiction Help"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/DrugsArt1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/drugsart1" />
-
-            <ImageView
-                android:id="@+id/DrugsArt2"
-                android:layout_width="156dp"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/drugsart3" />
-
-            <ImageView
-                android:id="@+id/DrugsArt3"
-                android:layout_width="163dp"
-                android:layout_height="109dp"
-                app:srcCompat="@drawable/drugsart4"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/DrugsArt4"
-                android:layout_width="178dp"
-                android:layout_height="131dp"
-                app:srcCompat="@drawable/drugsart5"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/DrugsArt5"
-                android:layout_width="176dp"
-                android:layout_height="133dp"
-                app:srcCompat="@drawable/drugsart2"
-                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/DrugsText1"
@@ -60,12 +44,27 @@
                 android:text="How to Break an Addiction: A Guide to Overcoming Addiction"
                 android:textAlignment="center" />
 
+            <ImageView
+                android:id="@+id/DrugsArt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/drugsart3" />
+
             <TextView
                 android:id="@+id/DrugsText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Overcoming Drug Addiction"
                 android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/DrugsArt3"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/drugsart4"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/DrugsText3"
@@ -74,12 +73,28 @@
                 android:text="Drugs, Brains, and Behavior: The Science of Addiction"
                 android:textAlignment="center" />
 
+            <ImageView
+                android:id="@+id/DrugsArt4"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/drugsart5"
+                tools:ignore="ContentDescription" />
+
             <TextView
                 android:id="@+id/DrugsText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Drug addiction (substance use disorder)"
                 android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/DrugsArt5"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/drugsart2"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/DrugsText5"
@@ -90,17 +105,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
-                android:id="@+id/backButton1"
-                android:layout_width="550dp"
-                android:layout_height="550dp"
-                android:layout_marginStart="-245dp"
-                android:layout_marginTop="-245dp"
-                android:scaleX="0.125"
-                android:scaleY="0.125"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/back_button"
-                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

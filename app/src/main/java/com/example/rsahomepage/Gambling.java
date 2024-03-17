@@ -15,14 +15,14 @@ public class Gambling extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gambling);
-        ImageButton backButton3 = findViewById(R.id.backButton3);
-        backButton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Gambling.this, AddictionsPageActivity.class);
-                startActivity(intent);
-            }
-        });
+        //ImageButton backButton3 = findViewById(R.id.backButton3);
+        //backButton3.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View v) {
+                //Intent intent = new Intent(Gambling.this, AddictionsPageActivity.class);
+                //startActivity(intent);
+            //}
+        //});
         ImageView Art1 = findViewById(R.id.GamblingArt1);
         Art1.setOnClickListener(new View.OnClickListener() {
             @Override

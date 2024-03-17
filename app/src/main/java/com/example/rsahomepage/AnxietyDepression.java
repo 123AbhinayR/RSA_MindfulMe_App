@@ -15,14 +15,14 @@ public class AnxietyDepression extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anxiety_depression);
-        ImageButton backButton2 = findViewById(R.id.backButton2);
-        backButton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AnxietyDepression.this, AddictionsPageActivity.class);
-                startActivity(intent);
-            }
-        });
+        //ImageButton backButton2 = findViewById(R.id.backButton2);
+        //backButton2.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View v) {
+                //Intent intent = new Intent(AnxietyDepression.this, AddictionsPageActivity.class);
+                //startActivity(intent);
+            //}
+        //});
         ImageView Art1 = findViewById(R.id.AnxArt1);
         Art1.setOnClickListener(new View.OnClickListener() {
             @Override
