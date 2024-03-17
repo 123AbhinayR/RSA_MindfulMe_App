@@ -3,16 +3,21 @@ package com.example.rsahomepage;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class InformationPageActivity extends AppCompatActivity {
 
-    Button btn1;
+    TextView web1;
+    TextView web2;
+    TextView web3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,25 +35,50 @@ public class InformationPageActivity extends AppCompatActivity {
 
         //videos
         TextView textView3  = findViewById(R.id.textview3);
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
+        textView3.setMovementMethod(LinkMovementMethod.getInstance());
 
         TextView textView4 = findViewById(R.id.textview4);
-        textView1.setMovementMethod(LinkMovementMethod.getInstance());
+        textView4.setMovementMethod(LinkMovementMethod.getInstance());
 
         TextView textView5 = findViewById(R.id.textview5);
-        textView2.setMovementMethod(LinkMovementMethod.getInstance());
+        textView5.setMovementMethod(LinkMovementMethod.getInstance());
 
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn1.setOnClickListener(new View.OnClickListener() {
+
+        web1 = findViewById(R.id.btn1);
+        web1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openPopUpWindow();
+                gotoURL("https://www.theatlantic.com/magazine/archive/2005/10/lincolns-great-depression/304247/");
             }
         });
+
+        web2 = findViewById(R.id.btn1);
+        web2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoURL("https://abcnews.go.com/GMA/Culture/dwayne-rock-johnson-shares-struggles-depression/story?id=99320228");
+            }
+        });
+
+        web3 = findViewById(R.id.btn1);
+        web3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoURL("https://www.menshealth.com/uk/mental-strength/a758320/watch-why-chris-evans-still-gets-anxiety-about-captain-america/");
+            }
+        });
+
+
+
     }
 
-    private void openPopUpWindow() {
-        Intent popUpWindow = new Intent(InformationPageActivity.this, PopupWindow.class);
-        startActivity(popUpWindow);
+    void gotoURL(String s) {
+        try {
+            Uri uri = Uri.parse(s);
+            startActivity(new Intent(Intent.ACTION_VIEW, uri));
+        }
+        catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "No Website Linked", Toast.LENGTH_SHORT).show();
+        }
     }
 }
