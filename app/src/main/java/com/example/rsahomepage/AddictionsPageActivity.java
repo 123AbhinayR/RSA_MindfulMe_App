@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class AddictionsPageActivity extends AppCompatActivity {
     Button drugButton;
     Button anxietyDepressionButton;
     Button gamblingButton;
     Button alcoholButton;
+    ImageButton addictionBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +22,7 @@ public class AddictionsPageActivity extends AppCompatActivity {
         anxietyDepressionButton = findViewById(R.id.AnxietyDepressionButton);
         gamblingButton = findViewById(R.id.GamblingButton);
         alcoholButton = findViewById(R.id.AlcoholButton);
+        addictionBack = findViewById(R.id.AddictionsBack);
         drugButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +48,13 @@ public class AddictionsPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AddictionsPageActivity.this, Alcohol.class);
+                startActivity(intent);
+            }
+        });
+        addictionBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddictionsPageActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
