@@ -13,6 +13,18 @@
         android:theme="@style/Theme.RSAHomePage"
         tools:targetApi="31">
         <activity
+            android:name=".Gambling"
+            android:exported="false" />
+        <activity
+            android:name=".AnxietyDepression"
+            android:exported="false" />
+        <activity
+            android:name=".Alcohol"
+            android:exported="false" />
+        <activity
+            android:name=".Drugs"
+            android:exported="false" />
+        <activity
             android:name=".JournalPageActivity"
             android:exported="false"
             android:label="@string/title_activity_journal_page"
