@@ -23,27 +23,25 @@
         android:id="@+id/DrugsArt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152"
-        app:srcCompat="@drawable/drugsart1"
-        android:importantForAccessibility="no" />
+        app:layout_constraintVertical_bias="0.125"
+        app:srcCompat="@drawable/drugsart1" />
 
     <ImageView
         android:id="@+id/DrugsArt2"
-        android:layout_width="173dp"
-        android:layout_height="131dp"
+        android:layout_width="181dp"
+        android:layout_height="70dp"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/drugsart3"
-        android:importantForAccessibility="no" />
+        app:layout_constraintVertical_bias="0.349"
+        app:srcCompat="@drawable/drugsart3" />
 
     <ImageView
         android:id="@+id/DrugsArt3"
@@ -51,10 +49,8 @@
         android:layout_height="109dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176"
         app:srcCompat="@drawable/drugsart4"
         tools:ignore="ContentDescription" />
 
@@ -64,21 +60,23 @@
         android:layout_height="131dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.727"
         app:srcCompat="@drawable/drugsart5"
         tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/DrugsArt5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="176dp"
+        android:layout_height="133dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/drugsart2"
         tools:ignore="ContentDescription" />
 
