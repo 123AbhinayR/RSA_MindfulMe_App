@@ -20,41 +20,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/TextArt1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="How to Break an Addiction: A Guide to Overcoming Addiction"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/TextArt2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Overcoming Drug Addiction"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/TextArt3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Drugs, Brains, and Behavior: The Science of Addiction"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/TextArt4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Drug addiction (substance use disorder)"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/TextArt5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dealing With Addiction (For Teens) "
-                android:textAlignment="center" />
-
             <ImageView
                 android:id="@+id/DrugsArt1"
                 android:layout_width="wrap_content"
@@ -87,6 +52,41 @@
                 android:layout_height="133dp"
                 app:srcCompat="@drawable/drugsart2"
                 tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/DrugsText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Break an Addiction: A Guide to Overcoming Addiction"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/DrugsText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Overcoming Drug Addiction"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/DrugsText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drugs, Brains, and Behavior: The Science of Addiction"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/DrugsText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drug addiction (substance use disorder)"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/DrugsText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dealing With Addiction (For Teens) "
+                android:textAlignment="center" />
 
         </LinearLayout>
     </ScrollView>

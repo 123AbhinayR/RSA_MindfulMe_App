@@ -4,8 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Gambling">
 
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/GamblingArt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/gamblingart1" />
+
+            <ImageView
+                android:id="@+id/GamblingArt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/gamblingart2" />
+
+            <ImageView
+                android:id="@+id/GamblingArt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/gamblingart3" />
+
+            <ImageView
+                android:id="@+id/GamblingArt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/gamblingart4" />
+
+            <ImageView
+                android:id="@+id/GamblingArt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginBottom="284dp"
+                app:srcCompat="@drawable/gamblingart5" />
+
+            <TextView
+                android:id="@+id/GamblingText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How To Stop Gambling: 6 Helpful Tips From Experts" />
+
+            <TextView
+                android:id="@+id/GamblingText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You Can Overcome Gambling Addiction" />
+
+            <TextView
+                android:id="@+id/GamblingText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gambling Addiction and Problem Gambling" />
+
+            <TextView
+                android:id="@+id/GamblingText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gambling risks are rising for young people. How to lower the stakes" />
+
+            <TextView
+                android:id="@+id/GamblingText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Stop Betting on Sports" />
+        </LinearLayout>
+    </ScrollView>
     <ImageButton
         android:id="@+id/backButton3"
         android:layout_width="550dp"
@@ -17,47 +96,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
-
-    <ImageView
-        android:id="@+id/GamblingArt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gamblingart1" />
-
-    <ImageView
-        android:id="@+id/GamblingArt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gamblingart2" />
-
-    <ImageView
-        android:id="@+id/GamblingArt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/gamblingart3" />
-
-    <ImageView
-        android:id="@+id/GamblingArt4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/gamblingart4" />
-
-    <ImageView
-        android:id="@+id/GamblingArt5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="284dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/gamblingart5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
