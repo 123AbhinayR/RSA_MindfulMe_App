@@ -14,7 +14,6 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <resources>
 
         <string name="link1">
         <a href="https://www.sutterhealth.org/health/mind-body/10-simple-ways-to-cope-with-stress">10 ways to cope with stress</a>
@@ -39,8 +38,6 @@
         <string name="link6">
         <a href="https://youtu.be/IDPDEKtd2yM?si=ohxiRUbpMq7Ze5AH">Living with Depression</a>
     </string>
-
-    </resources>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
