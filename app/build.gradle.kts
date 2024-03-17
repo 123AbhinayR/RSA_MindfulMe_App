@@ -42,7 +42,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    compileSdkVersion = 34
+    compileSdkVersion = "android-34"
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
     }
@@ -77,4 +77,6 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
 }
