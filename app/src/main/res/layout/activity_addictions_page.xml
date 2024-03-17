@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".AddictionsPageActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Addictions Page"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
     <Button
         android:id="@+id/DrugButton"
         android:layout_width="175dp"
