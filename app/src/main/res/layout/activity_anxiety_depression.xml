@@ -21,78 +21,89 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/AnxietyTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anxiety/Depression Help"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/AnxArt1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 app:srcCompat="@drawable/anx1" />
-
-            <ImageView
-                android:id="@+id/AnxArt2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/anx2" />
-
-            <ImageView
-                android:id="@+id/AnxArt3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/anx3" />
-
-            <ImageView
-                android:id="@+id/AnxArt4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/anx4" />
-
-            <ImageView
-                android:id="@+id/AnxArt5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/anx5" />
 
             <TextView
                 android:id="@+id/AnxText1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Overcoming Anxiety - Harvard" />
+                android:text="Overcoming Anxiety - Harvard"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/AnxArt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/anx2" />
 
             <TextView
                 android:id="@+id/AnxText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Types of anxiety and ways to overcome them" />
+                android:text="Types of anxiety and ways to overcome them"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/AnxArt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/anx3" />
 
             <TextView
                 android:id="@+id/AnxText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="11 tips for coping with an anxiety disorder" />
+                android:text="11 tips for coping with an anxiety disorder"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/AnxArt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/anx4" />
 
             <TextView
                 android:id="@+id/AnxText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Anxiety in Children and Teens: A Parent’s Guide" />
+                android:text="Anxiety in Children and Teens: A Parent’s Guide"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/AnxArt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/anx5" />
 
             <TextView
                 android:id="@+id/AnxText5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="How to Help Someone with Anxiety" />
+                android:text="How to Help Someone with Anxiety"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/backButton2"
-        android:layout_width="550dp"
-        android:layout_height="550dp"
-        android:layout_marginStart="-245dp"
-        android:layout_marginTop="-245dp"
-        android:scaleX="0.125"
-        android:scaleY="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_button" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

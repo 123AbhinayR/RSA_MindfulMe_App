@@ -24,79 +24,89 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/AlcoholTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alcohol Addiction Help"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
             <ImageView
                 android:id="@+id/AlcoholArt1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/alcoholart1" />
-
-            <ImageView
-                android:id="@+id/AlcoholArt2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/alcoholart2" />
-
-            <ImageView
-                android:id="@+id/AlcoholArt3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/alcoholart3" />
-
-            <ImageView
-                android:id="@+id/AlcoholArt4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="284dp"
-                app:srcCompat="@drawable/alcoholart4" />
-
-            <ImageView
-                android:id="@+id/AlcoholArt5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/alcoholart5" />
 
             <TextView
                 android:id="@+id/AlcoholText1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Overcoming Alcohol Addiction" />
+                android:text="Overcoming Alcohol Addiction"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/AlcoholArt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/alcoholart2" />
 
             <TextView
                 android:id="@+id/AlcoholText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Treatment for Alcohol Problems: Finding and Getting Help" />
+                android:text="Treatment for Alcohol Problems: Finding and Getting Help"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/AlcoholArt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/alcoholart3" />
 
             <TextView
                 android:id="@+id/AlcoholText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="11 ways to curb your drinking" />
+                android:text="11 ways to curb your drinking"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/AlcoholArt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/alcoholart4" />
 
             <TextView
                 android:id="@+id/AlcoholText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The Benefits of Quitting Alcohol" />
+                android:text="The Benefits of Quitting Alcohol"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/AlcoholArt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/alcoholart5" />
 
             <TextView
                 android:id="@+id/AlcoholText5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="7 Strategies You Can Use In Overcoming Alcoholism" />
+                android:text="7 Strategies You Can Use In Overcoming Alcoholism"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"/>
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/backButton4"
-        android:layout_width="550dp"
-        android:layout_height="550dp"
-        android:layout_marginStart="-245dp"
-        android:layout_marginTop="-245dp"
-        android:scaleX="0.125"
-        android:scaleY="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_button" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
