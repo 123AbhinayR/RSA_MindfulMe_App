@@ -20,7 +20,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     public CardView card1, card2, card3, card4;
-    public int done;
+    public boolean done;
+    public String name;
 
 
 
@@ -31,7 +32,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(zoomyZoom);
 
         setContentView(R.layout.activity_main);
+        Button button2 = findViewById(R.id.survey_button);
+        TextView textView = findViewById(R.id.textView);
+        if(done){
+            name = getIntent().getStringExtra("name");
+            String buttonText = "Hey "+name+"!";
+            textView.setText(buttonText);
 
+        }
 
 
         card1 = (CardView) findViewById(R.id.c1);
@@ -53,12 +61,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        Button button2 = findViewById(R.id.survey_button);
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SurveyActivity.class);
-                startActivity(intent);
+                if(!done){
+                    Intent intent = new Intent(MainActivity.this, SurveyActivity.class);
+                }
+
             }
         });
 
@@ -82,6 +92,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             i = new Intent(this, JournalPageActivity.class);
             startActivity(i);
         }
+    }
+
+
+    public void surveyClick(View view){
+        Intent i = new Intent(this, SurveyActivity.class);
+        done = true;
+        startActivity(i);
+
     }
 
 }
