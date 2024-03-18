@@ -1,58 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".SurveyActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
-        android:fitsSystemWindows="true"
-        android:layout_height="@dimen/app_bar_height"
-        android:layout_width="match_parent"
-        android:theme="@style/Theme.RSAHomePage.AppBarOverlay">
-
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/toolbar_layout"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
-            android:fitsSystemWindows="true"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:toolbarId="@+id/toolbar"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="?attr/colorPrimary">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/Theme.RSAHomePage.PopupOverlay" />
-
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_scrolling" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/fab_margin"
-        app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Survey Page"
-        android:textColor="#F6F4F4"
-        app:layout_anchor="@+id/app_bar"
-        app:layout_anchorGravity="center" />
+        android:text="What is your favorite color?"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RadioGroup
+        android:id="@+id/answerChoicesRadioGroup"
+        android:layout_width="412dp"
+        android:layout_height="260dp"
+        android:layout_below="@id/questionTextView"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView"
+        app:layout_constraintVertical_bias="0.419">
+
+        <RadioButton
+            android:id="@+id/choice1RadioButton"
+            android:layout_width="178dp"
+            android:layout_height="78dp"
+            android:text="Red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/choice2RadioButton"
+            android:layout_width="181dp"
+            android:layout_height="92dp"
+            android:text="Blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/choice3RadioButton"
+            android:layout_width="182dp"
+            android:layout_height="84dp"
+            android:text="Green"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="171dp"
+        android:layout_height="76dp"
+        android:layout_below="@id/answerChoicesRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questionTextView"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView"
+        app:layout_constraintVertical_bias="0.897" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
