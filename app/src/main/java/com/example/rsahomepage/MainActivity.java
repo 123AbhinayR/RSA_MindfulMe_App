@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View view) {
                 if(!done){
                     Intent intent = new Intent(MainActivity.this, SurveyActivity.class);
+                    startActivity(intent);
                 }
 
             }
