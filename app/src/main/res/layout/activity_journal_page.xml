@@ -33,13 +33,13 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Note Title"
+            android:hint="Record Note Title and Date here."
             android:id="@+id/titleEditText"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Record any progress or setbacks you've had today regarding your mental health and/or addictions. "
+            android:hint="Record any progress or setbacks you've had today regarding your mental health and/or addictions here. "
             android:layout_marginTop="16dp"
             android:inputType="textMultiLine"
             android:minLines="5"
