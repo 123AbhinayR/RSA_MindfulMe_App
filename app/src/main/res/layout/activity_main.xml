@@ -18,12 +18,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#38B6FF"
+        android:onClick="surveyClick"
         android:text="SURVEY"
         android:textColor="#000000"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="#38B6FF" />
+        android:textStyle="bold" />
 
     <GridLayout
         android:layout_width="match_parent"

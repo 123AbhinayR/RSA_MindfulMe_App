@@ -15,6 +15,9 @@
         android:theme="@style/Theme.RSAHomePage"
         tools:targetApi="31">
         <activity
+            android:name=".Name"
+            android:exported="false" />
+        <activity
             android:name=".Transition"
             android:exported="false" />
         <activity
