@@ -190,7 +190,7 @@
         android:layout_height="wrap_content"
         android:background="#FFe66d"
         android:padding="5dp"
-        android:text="Dwayne Johson"
+        android:text="Dwayne Johnson"
         android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold"

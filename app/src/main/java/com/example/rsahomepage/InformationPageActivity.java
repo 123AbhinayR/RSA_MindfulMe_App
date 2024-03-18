@@ -52,7 +52,7 @@ public class InformationPageActivity extends AppCompatActivity {
             }
         });
 
-        web2 = findViewById(R.id.btn1);
+        web2 = findViewById(R.id.btn2);
         web2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +60,7 @@ public class InformationPageActivity extends AppCompatActivity {
             }
         });
 
-        web3 = findViewById(R.id.btn1);
+        web3 = findViewById(R.id.btn3);
         web3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
